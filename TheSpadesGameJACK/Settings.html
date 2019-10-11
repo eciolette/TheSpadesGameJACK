@@ -2,9 +2,105 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>The Spades Games Jack</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40pt;
+            color: white;
+            text-align: center;
+            margin-bottom: -50px;   
+        }
+
+        img {
+            width: 20%;
+            margin-top: -50px;
+        }
+
+        a {
+            background-color: white;
+            padding: 5px 50px 5px 50px;
+            margin: auto 500px auto 625px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 30pt;
+            transition: background-color 1s;
+            font-weight: bold;
+            text-decoration: none;
+            color: forestgreen;
+            font-weight: bold;
+        }
+
+        h6 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15pt;
+            color: white;
+            text-align: right;
+            margin-right: 50px;
+        }
+
+        form{
+            width: 500px;
+            margin: auto;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20pt;
+            background-color: white;
+            text-align: center;
+            font-weight: bold;
+            color: forestgreen;
+            padding:20px;
+            margin-top: -50px;
+        }
+
+    </style>
 </head>
 <body>
+    <h1> THE SPADES GAMES </h1>
+    <h1> TEAM JACK </h1>
+    <img id="logo" src="Images/logo.png.jpg" />
+    <form>
+        <fieldset id="setting">
+            <legend>SETTINGS</legend>
+            <p>Hint button on all levels:</p>
+            <input type="radio" name="tLevel" id="cOn1" checked /> <label for="cOn1">ON</label>
+            <input type="radio" name="tLevel" id="cOff1" /> <label for="cOff1">OFF</label>
 
+            <p>Sand bagging penalty:</p>
+            <input type="radio" name="tPenalty" id="cOn2" checked /> <label for="cOn2">ON</label>
+            <input type="radio" name="tPenalty" id="cOff2" /> <label for="cOff2">OFF</label>
+
+            <p>
+                <label for="cScore">Winning score:</label>
+                <select name="tScore" id="cScore">
+                    <option value="200" selected>200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="3000">3000</option>
+                    <option value="5000">5000</option>
+                </select>
+            </p>
+
+            <p>
+
+                <label for="cBoard">Board Background:</label>
+                <input type="color" name="tBoard" id="cBoard" />
+            </p>
+            
+            <p>
+                <label for="cCard">Card Color:</label>
+                <input type="color" name="tCard" id="cCard" />
+            </p>
+
+        </fieldset>
+    </form>
+    <br />
+    <br />
+    <a href="Index.html">BACK MENU</a>
+    <br />
+    <h6>Team Jack - The Spades Games</h6>
 </body>
 </html>
