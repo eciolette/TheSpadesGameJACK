@@ -192,7 +192,12 @@
     <Content Include="Images\Models\honor_heart-14.png" />
     <Content Include="Images\Start.jpg" />
     <Content Include="Index.html" />
+<<<<<<< HEAD
     <Content Include="ScoreTable.aspx" />
+=======
+    <Content Include="MainPage.aspx" />
+    <Content Include="Mari_Bid.aspx" />
+>>>>>>> b4fc07157692229ffc8eeed3861ec08b177f087f
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -258,6 +263,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mari_Bid.aspx.cs">
+      <DependentUpon>Mari_Bid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mari_Bid.aspx.designer.cs">
+      <DependentUpon>Mari_Bid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScoreTable.aspx.cs">
