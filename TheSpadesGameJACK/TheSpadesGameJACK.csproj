@@ -192,6 +192,7 @@
     <Content Include="Images\Models\honor_heart-14.png" />
     <Content Include="Images\Start.jpg" />
     <Content Include="Index.html" />
+    <Content Include="MainPage.aspx" />
     <Content Include="Mari_Bid.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -258,6 +259,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mari_Bid.aspx.cs">
       <DependentUpon>Mari_Bid.aspx</DependentUpon>
