@@ -192,9 +192,18 @@
     <Content Include="Images\Models\honor_heart-14.png" />
     <Content Include="Images\Start.jpg" />
     <Content Include="Index.html" />
+<<<<<<< HEAD
     <Content Include="ScoreTable.aspx" />
     <Content Include="MainPage.aspx" />
     <Content Include="Mari_Bid.aspx" />
+=======
+
+    <Content Include="ScoreTable.aspx" />
+
+    <Content Include="MainPage.aspx" />
+    <Content Include="Mari_Bid.aspx" />
+
+>>>>>>> 55cea991b9898c92e8c4f0e5ef17247f371b8bbb
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
