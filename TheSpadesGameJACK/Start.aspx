@@ -97,6 +97,7 @@
         <h2 style="font-family: Arial, Helvetica, sans-serif; color: white; margin: -150px auto auto 700px">Player 2</h2>
         <h2 style="font-family: Arial, Helvetica, sans-serif; color: white; margin: 110px auto auto 1330px">Player 3</h2>
         <h2 style="font-family: Arial, Helvetica, sans-serif; color: white; margin: 580px 50px 50px 680px">PLAYER: YUSUF</h2>
+        <a href="Bid.aspx" target="_blank" style="font-family:Arial, Helvetica, sans-serif; font-size: 30pt; color: white; margin-left: 200px; text-decoration: none;"> BID</a>
     </form>
 </body>
 </html>
