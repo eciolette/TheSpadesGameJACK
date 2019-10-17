@@ -17,23 +17,55 @@
 
         .card2 {
             transform: rotate(90deg);
-            margin: 1500px auto auto -1250px;
+            margin: 1350px auto auto -1250px;
         }
 
         .card3 {
             transform: rotate(90deg);
-            margin: -140px -1200px auto auto;
+            margin: -240px -1200px auto auto;
         }
 
-        .cardUser {
-            margin: -850px auto;
+        .flipper {
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .flip-container {
+            perspective: 1000;
+        }
+
+            .flip-container:hover .flipper, .flip-container.hover .flipper {
+                transform: rotateY(180deg);
+            }
+
+        .flip-container, .front, .back {
+            margin: -450px auto;
             width: 700px;
+        }
+
+        .front, .back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .front {
+            z-index: 2;
+        }
+
+        .back {
+            transform: rotateY(180deg);
         }
     </style>
 </head>
 <body>
+
     <form id="form1" runat="server">
+                <a href="Bid.aspx" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 30pt; color: yellow; margin: auto auto auto 1350px; text-decoration: none;"><b> B I D </a>
         <div class="card1">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">Player 1</h2>
             <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
             <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
             <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
@@ -49,6 +81,7 @@
             <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
         </div>
         <div class="card2">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">Player 2</h2>
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
@@ -64,6 +97,7 @@
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
         </div>
         <div class="card3">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">Player 3</h2>
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
@@ -78,26 +112,43 @@
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
             <img src="Images/Colors/red_back.png" style="width: 3.5%; height: 3.5%; margin-right: -65px" />
         </div>
-        <div class="cardUser">
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
-            <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front">
+                    <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">PLAYER: YUSUF</h2>
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Colors/red_back.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                </div>
+                <div class="back">
+                    <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">PLAYER: YUSUF</h2>
+                    <img src="Images/Cards/2C.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/5C.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/10C.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/AC.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/3D.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/8D.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/JD.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/KD.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/4H.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/AH.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/JS.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/KS.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                    <img src="Images/Cards/AS.png" style="width: 15%; height: 15%; margin-right: -65px" />
+                </div>
+            </div>
         </div>
-        <h2 style="font-family: Arial, Helvetica, sans-serif; color: white; margin: 5px 10px 10px 115px">Player 1</h2>
-        <h2 style="font-family: Arial, Helvetica, sans-serif; color: white; margin: -150px auto auto 700px">Player 2</h2>
-        <h2 style="font-family: Arial, Helvetica, sans-serif; color: white; margin: 110px auto auto 1330px">Player 3</h2>
-        <h2 style="font-family: Arial, Helvetica, sans-serif; color: white; margin: 580px 50px 50px 680px">PLAYER: YUSUF</h2>
-        <a href="Bid.aspx" target="_blank" style="font-family:Arial, Helvetica, sans-serif; font-size: 30pt; color: white; margin-left: 200px; text-decoration: none;"> BID</a>
     </form>
 </body>
 </html>
