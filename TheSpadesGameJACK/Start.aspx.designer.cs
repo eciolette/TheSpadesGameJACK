@@ -11,7 +11,7 @@ namespace TheSpadesGameJACK
 {
 
 
-    public partial class MainPage
+    public partial class Start
     {
 
         /// <summary>

@@ -7,7 +7,7 @@
     <title></title>
     <style>
         body {
-            background-image: url(Images\Start.jpg);
+            background-image: url(\Images\Start.jpg);
             background-repeat: no-repeat;
         }
 

@@ -192,12 +192,9 @@
     <Content Include="Images\Models\honor_heart-14.png" />
     <Content Include="Images\Start.jpg" />
     <Content Include="Index.html" />
-<<<<<<< HEAD
     <Content Include="ScoreTable.aspx" />
-=======
     <Content Include="MainPage.aspx" />
     <Content Include="Mari_Bid.aspx" />
->>>>>>> b4fc07157692229ffc8eeed3861ec08b177f087f
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -228,7 +225,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Settings.html" />
     <Content Include="Site.Master" />
-    <Content Include="Start.html" />
+    <Content Include="Start.aspx" />
     <Content Include="Statistics.html" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Tutorial.html" />
@@ -299,6 +296,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Start.aspx.cs">
+      <DependentUpon>Start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Start.aspx.designer.cs">
+      <DependentUpon>Start.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
